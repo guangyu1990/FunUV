@@ -26,7 +26,7 @@ def main(pfile, region, outp):
     if '5' in region:
         pklfile = pwdir+'/model/GDBoost_for_5UTR.pickle'
     elif '3' in region:
-        pklfile = pwdir+'/model/GDBoost_for_3UTR.pickle'
+        pklfile = pwdir+'/model/GBDT_for_3UTR.pickle'
     model = pickle.load(file=open(pklfile, 'rb'))
     print(model)
     print("Model is ready!")
